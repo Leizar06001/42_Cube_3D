@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rloussig <rloussig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: raphaelloussignian <raphaelloussignian@    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/13 12:31:09 by raphaellous       #+#    #+#             */
-/*   Updated: 2023/10/07 17:20:48 by rloussig         ###   ########.fr       */
+/*   Updated: 2023/10/15 14:50:45 by raphaellous      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ void	next_game_frame(t_data *dt)
 	draw_rays(dt);
 	draw_sprites(dt, &dt->sp, &dt->draw);
 	draw_weapon(dt, &dt->sp, &dt->draw);
-	draw_interface(dt, &dt->mima);
+	//draw_interface(dt, &dt->mima);
 	manage_game_steps(dt);
 	manage_sounds(dt);
 	show_damages(dt);
