@@ -6,7 +6,7 @@
 /*   By: raphaelloussignian <raphaelloussignian@    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 18:47:26 by rloussig          #+#    #+#             */
-/*   Updated: 2023/09/27 11:47:11 by raphaellous      ###   ########.fr       */
+/*   Updated: 2023/10/15 15:50:38 by raphaellous      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ void	ft_draw_backgound(t_data *dt)
 		j = -1;
 		while (++j < WIN_WIDTH)
 			ft_put_pixel(&dt->img, j, i, trgb(0,
-					loading_text[(j + i * WIN_WIDTH) * 3],
-					loading_text[(j + i * WIN_WIDTH) * 3 + 1],
-					loading_text[(j + i * WIN_WIDTH) * 3 + 2]));
+					loading_text[(j + i * 1280) * 3],
+					loading_text[(j + i * 1280) * 3 + 1],
+					loading_text[(j + i * 1280) * 3 + 2]));
 	}
 }
 
@@ -66,8 +66,8 @@ void	ft_draw_menu_kitty(t_data *dt)
 					kitty_walk[pix * 3],
 					kitty_walk[pix * 3 + 1],
 					kitty_walk[pix * 3 + 2]);
-			dt->draw.x = x * 3 + 1050;
-			dt->draw.y = y * 3 + 600;
+			dt->draw.x = x * 3 + 1000;
+			dt->draw.y = y * 3 + 450;
 			dt->draw.size = 3;
 			if (dt->draw.color != 0x00FF00FF)
 				draw_square(&dt->img, &dt->draw);

@@ -6,7 +6,7 @@
 /*   By: raphaelloussignian <raphaelloussignian@    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/27 18:39:18 by raphaellous       #+#    #+#             */
-/*   Updated: 2023/10/01 18:30:30 by raphaellous      ###   ########.fr       */
+/*   Updated: 2023/10/15 15:54:14 by raphaellous      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ void	scale_pic(t_data *dt, t_draw *d, int scale)
 	int	i;
 	int	j;
 	int	posx;
+	int	posy;
 
 	i = 0;
 	while (++i <= scale)
@@ -38,9 +39,10 @@ void	scale_pic(t_data *dt, t_draw *d, int scale)
 		while (++j <= scale)
 		{
 			posx = d->w * scale + i + d->x;
+			posy = d->h * scale + j + d->y;
 			if (d->color != 0x0000FFFF && d->color != 0x00FF00FF
-				&& posx > 0 && posx < WIN_WIDTH)
-				ft_put_pixel(&dt->img, posx, d->h * scale + j + d->y, d->color);
+				&& posx > 0 && posx < WIN_WIDTH && posy < WIN_HEIGHT)
+				ft_put_pixel(&dt->img, posx, posy, d->color);
 		}
 	}
 }

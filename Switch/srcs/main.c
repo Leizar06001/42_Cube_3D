@@ -6,7 +6,7 @@
 /*   By: raphaelloussignian <raphaelloussignian@    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/13 12:31:09 by raphaellous       #+#    #+#             */
-/*   Updated: 2023/10/15 14:50:45 by raphaellous      ###   ########.fr       */
+/*   Updated: 2023/10/15 15:55:56 by raphaellous      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,16 +44,37 @@ void	next_game_frame(t_data *dt)
 {
 	clock_t	init;
 	int		sl_time;
+	clock_t	start;
 
+	printf("***************************\n");
 	init = clock();
+
+	start = clock();
 	manage_mouse(dt);
 	do_moves(dt, &dt->player);
 	check_triggers(dt, &dt->player, &dt->sp);
+	printf("moves	: %ld\n", clock() - start);
+
+	start = clock();
 	rays_mobs(dt);
+	printf("ray mobs: %ld\n", clock() - start);
+
+	start = clock();
 	manage_ai(dt);
+	printf("ai		: %ld\n", clock() - start);
+
+	start = clock();
 	update_sprites(dt);
+	printf("up sp	: %ld\n", clock() - start);
+
+	start = clock();
 	draw_rays(dt);
+	printf("rays	: %ld\n", clock() - start);
+
+	start = clock();
 	draw_sprites(dt, &dt->sp, &dt->draw);
+	printf("draw sp	: %ld\n", clock() - start);
+
 	draw_weapon(dt, &dt->sp, &dt->draw);
 	//draw_interface(dt, &dt->mima);
 	manage_game_steps(dt);
@@ -63,6 +84,7 @@ void	next_game_frame(t_data *dt)
 		debug(dt);
 	dt->img_exists = 1;
 	mlx_put_image_to_window(dt->mlx, dt->win, dt->img.img, 0, 0);
+	printf("tot 	: %ld\n", clock() - init);
 	sl_time = 1000000 / 40 - (int)(((float)(clock() - init)
 				/ CLOCKS_PER_SEC) * 1000000);
 	if (sl_time > 0)
@@ -97,6 +119,7 @@ int	main(int argc, char **argv)
 	t_data	dt;
 
 	check_args(&dt, argc, argv);
+	dt.disable_xwin = 1;
 	printf("\n/----------------------------------------------\\\n");
 	printf("|                                              |\n");
 	printf("|                 C U B E   3 D                |\n");
