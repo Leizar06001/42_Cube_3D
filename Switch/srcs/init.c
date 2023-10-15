@@ -6,7 +6,7 @@
 /*   By: raphaelloussignian <raphaelloussignian@    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/13 16:02:05 by raphaellous       #+#    #+#             */
-/*   Updated: 2023/10/09 14:08:22 by raphaellous      ###   ########.fr       */
+/*   Updated: 2023/10/15 14:54:28 by raphaellous      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,7 +98,7 @@ void	init_values(t_data *dt)
 	update_loading(dt, &dt->menu, 15);
 	init_mimap(&dt->mima, &dt->maps, dt);
 	init_player(&dt->mima, &dt->player);
-	dt->ui_h = WIN_HEIGHT * 0.25;
+	dt->ui_h = WIN_HEIGHT * 0; //0.25;
 	dt->win_h = WIN_HEIGHT - dt->ui_h;
 	dt->var = 400;
 	dt->var2 = 1.0;
