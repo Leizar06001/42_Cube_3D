@@ -6,14 +6,14 @@
 /*   By: raphaelloussignian <raphaelloussignian@    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 22:12:45 by raphaellous       #+#    #+#             */
-/*   Updated: 2023/10/15 14:58:59 by raphaellous      ###   ########.fr       */
+/*   Updated: 2023/10/15 15:32:57 by raphaellous      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef DEFINES_H
 # define DEFINES_H
 
-# define WIN_WIDTH	1280
+# define WIN_WIDTH	1150
 # define WIN_HEIGHT	650
 # define DOWNSCALE	4.0
 
