@@ -1,5 +1,7 @@
 Switch/SDL2/build
 Switch/SDL2/VisualC
+Switch/cube3d
+mlx_linux/Makefile.gen
 
 *.DS_Store
 
