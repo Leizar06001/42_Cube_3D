@@ -1,5 +1,6 @@
 Switch/SDL2/build
 Switch/SDL2/VisualC
+mlx_linux/test
 
 *.DS_Store
 
