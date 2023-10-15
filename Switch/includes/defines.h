@@ -6,7 +6,7 @@
 /*   By: raphaelloussignian <raphaelloussignian@    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 22:12:45 by raphaellous       #+#    #+#             */
-/*   Updated: 2023/10/15 14:55:09 by raphaellous      ###   ########.fr       */
+/*   Updated: 2023/10/15 14:58:59 by raphaellous      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@
 # define WIN_HEIGHT	650
 # define DOWNSCALE	4.0
 
-# define PLAYER_SPEED	0.7
-# define RUN_SPEED		1.2
-# define ROT_SPEED		0.04
+# define PLAYER_SPEED	1.0
+# define RUN_SPEED		1.5
+# define ROT_SPEED		0.1
 # define FPS_SLEEP		1
 
 # define ON_DESTROY		17
