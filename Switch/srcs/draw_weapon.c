@@ -6,7 +6,7 @@
 /*   By: raphaelloussignian <raphaelloussignian@    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/27 17:39:36 by raphaellous       #+#    #+#             */
-/*   Updated: 2023/10/01 17:55:40 by raphaellous      ###   ########.fr       */
+/*   Updated: 2023/10/15 15:36:04 by raphaellous      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static void	calc_pos_hands(t_sprites *sp, t_draw *d, t_weapons *w)
 {
 	w->hand_w = 113;
 	w->hand_h = 42;
-	d->y = 495;
+	d->y = 495 + 50;
 	if (sp->states[29] == 1 || sp->states[29] == 3)
 		d->y += 10;
 	else if (sp->states[29] == 2)
@@ -27,7 +27,7 @@ static void	calc_pos_hands(t_sprites *sp, t_draw *d, t_weapons *w)
 	else if (sp->states[29] == 6)
 		d->y -= 20;
 	w->lhandy = d->y;
-	w->rhandy = 495 + (495 - w->lhandy);
+	w->rhandy = (495 + 50) + ((495 + 50) - w->lhandy);
 }
 
 static void	draw_hands(t_data *dt, t_sprites *sp, t_draw *d, t_weapons *w)

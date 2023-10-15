@@ -6,7 +6,7 @@
 /*   By: raphaelloussignian <raphaelloussignian@    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 00:33:30 by raphaellous       #+#    #+#             */
-/*   Updated: 2023/10/01 17:51:28 by raphaellous      ###   ########.fr       */
+/*   Updated: 2023/10/15 15:35:30 by raphaellous      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static void	pos_chainsaw_low(t_sprites *sp, t_draw *d, t_weapons *w)
 	w->hand_w = 140;
 	w->hand_h = 55;
 	d->x = 500;
-	d->y = 465;
+	d->y = 465 + 50;
 	if (sp->states[29] == 1 || sp->states[29] == 3)
 		d->y += 5;
 	else if (sp->states[29] == 2)
@@ -57,7 +57,7 @@ static void	draw_chainsaw_low(t_data *dt, t_sprites *sp,
 static void	pos_chainsaw_high(t_sprites *sp, t_draw *d, t_weapons *w)
 {
 	d->x = 300;
-	d->y = 253;
+	d->y = 253 + 50;
 	w->hand_w = 153;
 	w->hand_h = 89;
 	if (sp->states[29] == 1 || sp->states[29] == 3)
