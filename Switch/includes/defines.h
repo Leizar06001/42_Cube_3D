@@ -6,7 +6,7 @@
 /*   By: raphaelloussignian <raphaelloussignian@    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 22:12:45 by raphaellous       #+#    #+#             */
-/*   Updated: 2023/10/15 16:30:22 by raphaellous      ###   ########.fr       */
+/*   Updated: 2023/10/15 16:40:54 by raphaellous      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # define WIN_WIDTH	1200
 # define WIN_HEIGHT	650
-# define DOWNSCALE	8.0
+# define DOWNSCALE	1.0
 
 # define PLAYER_SPEED	1.0
 # define RUN_SPEED		1.5
