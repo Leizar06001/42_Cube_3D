@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   mouse.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rloussig <rloussig@student.42.fr>          +#+  +:+       +#+        */
+/*   By: raziel <raziel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 00:07:34 by raphaellous       #+#    #+#             */
-/*   Updated: 2023/10/03 12:30:58 by rloussig         ###   ########.fr       */
+/*   Updated: 2023/10/16 17:35:22 by raziel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	manage_mouse(t_data *dt)
 	if (XQueryPointer(dt->dpy, dt->root_window, &dt->root_window,
 			&m.child_window, &m.rootx, &m.rooty, &m.winx, &m.winy, &m.mask))
 	{
-		dt->player.pa -= (dt->screen_w / 2 - m.rootx) * 0.001;
+		dt->player.pa -= (dt->screen_w / 2 - m.rootx) * 0.004;
 		dt->player.vangle += (dt->screen_h / 2 - m.rooty) * 0.5;
 	}
 	if (dt->player.vangle > 200)

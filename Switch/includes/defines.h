@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   defines.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: raphaelloussignian <raphaelloussignian@    +#+  +:+       +#+        */
+/*   By: raziel <raziel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 22:12:45 by raphaellous       #+#    #+#             */
-/*   Updated: 2023/10/15 16:43:55 by raphaellous      ###   ########.fr       */
+/*   Updated: 2023/10/16 17:03:32 by raziel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@
 # define WIN_HEIGHT	650
 # define DOWNSCALE	4.0
 
-# define PLAYER_SPEED	1.0
-# define RUN_SPEED		1.5
-# define ROT_SPEED		0.14
+# define PLAYER_SPEED	1.4
+# define RUN_SPEED		1.9
+# define ROT_SPEED		0.4
 # define FPS_SLEEP		1
 
 # define ON_DESTROY		17
