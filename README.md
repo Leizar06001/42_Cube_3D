@@ -1,5 +1,5 @@
-# PROJET CUBE 3D
-Ecole 42 Perpignan
+# ESCAPE THE CUBE
+Projet Cube 3D - Ecole 42 Perpignan
 
 ## Be prepared to face your biggest fears !
 
