@@ -23,10 +23,11 @@ This is the final version with bonuses, I won't give you the easy simple version
 Items, chainsaw, SOUNDS..
 
 ### Controls :
-W > up | A > left | S > down | D > right
+W > up | A > left | S > down | D > right |
 Shift > run | Space > attack
 
-You should be able to use the mouse to rotate and attack but under some systems it doesn't work properly so use Q and E instead
+You should be able to use the mouse to rotate and attack but under some systems it doesn't work properly so use Q and E instead. 
+If you are using a VM, it can cause this problem, try disabling mouse integration (automatic switching between host and VM)
 
 ### If you get this error :
 ```
