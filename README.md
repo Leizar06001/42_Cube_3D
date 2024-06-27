@@ -3,6 +3,11 @@ Projet Cube 3D - Ecole 42 Perpignan
 
 ## Be prepared to face your biggest fears !
 
+### Requirements
+run:
+> sudo apt install -y build-essential cmake libx11-dev libxext-dev zlib1g-dev
+
+
 To compile:
 go into 'Bonus'
 > make all
@@ -23,6 +28,18 @@ Shift > run | Space > attack
 
 You should be able to use the mouse to rotate and attack but under some systems it doesn't work properly so use Q and E instead
 
-Works under linux
+### If you get this error :
+```
+Parent window has XID 0x2c5
+Found child window with XID 0x60000a
+Move window = 1
+Move window = 1
+munmap_chunk(): invalid pointer
+[1]    20008 IOT instruction (core dumped)  ./cube3d
+```
+Try running this 
+> ./cube3d diswin
+
+## Works under linux
 
 ![til](./cube.gif)
