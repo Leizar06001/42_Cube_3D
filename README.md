@@ -5,7 +5,7 @@ Projet Cube 3D - Ecole 42 Perpignan
 
 ### Requirements
 run:
-> sudo apt install -y build-essential cmake libx11-dev libxext-dev zlib1g-dev
+> sudo apt install -y build-essential cmake libx11-dev libxext-dev zlib1g-dev libbsd-dev
 
 
 To compile:
